@@ -4,7 +4,7 @@ platforms: .Net
 author: hovsepm
 ---
 
-#Getting Started with Compute - Manage Virtual Machine Scale Set Async - in .Net #
+# Getting Started with Compute - Manage Virtual Machine Scale Set Async - in .Net #
 
           Azure Compute sample for managing virtual machine scale sets with un-managed disks -
            - Create a virtual machine scale set behind an Internet facing load balancer
