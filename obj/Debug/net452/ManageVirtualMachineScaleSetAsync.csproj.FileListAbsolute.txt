@@ -1,0 +1,4 @@
+C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\bin\Debug\net452\ManageVirtualMachineScaleSetAsync.runtimeconfig.json
+C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\bin\Debug\net452\ManageVirtualMachineScaleSetAsync.runtimeconfig.dev.json
+C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\obj\Debug\net452\ManageVirtualMachineScaleSetAsync.csproj.ManageVirtualMachineScaleSetAsync.exe.config
+C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\obj\Debug\net452\ManageVirtualMachineScaleSetAsync.csproj.CoreCompileInputs.cache
