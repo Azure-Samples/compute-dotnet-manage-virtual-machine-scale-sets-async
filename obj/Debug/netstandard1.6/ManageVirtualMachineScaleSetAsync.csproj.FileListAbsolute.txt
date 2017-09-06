@@ -1,2 +1,0 @@
-C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\bin\Debug\netstandard1.6\ManageVirtualMachineScaleSetAsync.deps.json
-C:\Sources\dotnet-samples\compute-dotnet-manage-virtual-machine-scale-sets-async\obj\Debug\netstandard1.6\ManageVirtualMachineScaleSetAsync.csproj.CoreCompileInputs.cache
