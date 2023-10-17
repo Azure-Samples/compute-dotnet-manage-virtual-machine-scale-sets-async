@@ -8,7 +8,7 @@ using Azure.ResourceManager.Compute.Models;
 using Azure.ResourceManager.Compute;
 using Azure.ResourceManager.Network;
 using Azure.ResourceManager.Resources;
-using Microsoft.Azure.Management.Samples.Common;
+using Azure.ResourceManager.Samples.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +57,6 @@ namespace ManageVirtualMachineScaleSetAsync
             var sshKey = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfSPC2K7LZcFKEO+/t3dzmQYtrJFZNxOsbVgOVKietqHyvmYGHEC0J2wPdAqQ/63g/hhAEFRoyehM+rbeDri4txB3YFfnOK58jqdkyXzupWqXzOrlKY4Wz9SKjjN765+dqUITjKRIaAip1Ri137szRg71WnrmdP3SphTRlCx1Bk2nXqWPsclbRDCiZeF8QOTi4JqbmJyK5+0UqhqYRduun8ylAwKKQJ1NJt85sYIHn9f1Rfr6Tq2zS0wZ7DHbZL+zB5rSlAr8QyUdg/GQD+cmSs6LvPJKL78d6hMGk84ARtFo4A79ovwX/Fj01znDQkU6nJildfkaolH2rWFG/qttD azjava@javalib.Com";
 
             var apacheInstallScript = "https://raw.githubusercontent.com/Azure/azure-libraries-for-net/master/Samples/Asset/install_apache.sh";
-            var installCommand = "bash install_apache.sh";
             var fileUris = new List<string>();
             var lro = await client.GetDefaultSubscription().GetResourceGroups().CreateOrUpdateAsync(Azure.WaitUntil.Completed, rgName, new ResourceGroupData(AzureLocation.EastUS));
             var resourceGroup = lro.Value;
@@ -403,7 +402,9 @@ namespace ManageVirtualMachineScaleSetAsync
                 {
                     Sku = new ComputeSku()
                     {
+                        Name = "StandardD3v2",
                         Capacity = 6,
+                        Tier = "Standard"
                     },
                     VirtualMachineProfile = new VirtualMachineScaleSetUpdateVmProfile()
                     {
